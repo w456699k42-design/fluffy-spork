@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>KFC梗图文案</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KFC梗文案</title>
 <style>
-body{margin:0;padding:30px;font-size:17px;background:#fff;color:#222;line-height:1.6;}
+body{
+  margin:0;
+  padding:30px;
+  font-size:17px;
+  background:#fff;
+  color:#222;
+  line-height:1.6;
+}
 </style>
 </head>
 <body>
+<div id="content"></div>
 <script>
 const list = [
 "今天数据不太好，想找个人请我吃顿肯德基，V我50，让我感受一下互联网还有真情在。",
 "别问我为什么发这条，问就是周四到了，肯德基的原味鸡在召唤我，V我50，我不想一个人饿着。",
 "我这一生信过很多东西，最后只信肯德基原味鸡，V我50，帮我完成本周信仰充值。",
 "朋友圈都在吃肯德基，只有我在假装没看见，其实我已经馋了一下午，V我50，让我也加入队伍。",
-"刚刚刷到别人吃香辣鸡腿堡，面包松软，鸡腿肉爆汁，我默默放下了手里的泡面，V我50。",
+"刚刚刷到别人吃香辣鸡腿堡，面包松软，鸡腿肉爆汁，我默默放下手里的泡面，V我50。",
 "不是我想攀比，只是别人都有肯德基吃，我没有，这对我的精神状态影响很大，V我50。",
 "我跟朋友说我想吃肯德基，朋友让我忍忍，我说忍得了吗？忍不了一点，V我50。",
 "肯德基这个东西很奇怪，平时不想，一到周四就特别想吃，V我50，别让我对着屏幕流口水。",
@@ -26,7 +34,7 @@ const list = [
 "别再问我为什么总是要50了，因为50刚好够我买一份肯德基，V我50，别问太多。",
 "我现在满脑子都是肯德基，原味鸡、薯条、香辣鸡腿堡，它们在我脑子里开会，V我50，让它们闭嘴。",
 "人是会变的，但我对肯德基的热爱不会，V我50，验证一下这句话是不是真的。",
-"周四的肯德基就像一种传染病，别人一吃，我就开始痒，V我50，帮我止痒。",
+"周四的肯德基就像一种传染病，别人一吃，我就开始馋，V我50，帮我止痒。",
 "我不是馋，我只是想体验一下周四吃肯德基是什么感觉，V我50，让我长长见识。",
 "今天的工作已经够苦了，不能连肯德基都没有，V我50，给打工人一点尊严。",
 "肯德基不是奢侈品，是我周四的精神食粮，V我50，别让我断粮。",
@@ -214,7 +222,9 @@ const list = [
 "别人周四去旅行，我周四去肯德基，V我50，我的旅行也需要一张门票。",
 "我不是在开玩笑，我是真的很想吃肯德基，V我50，认真一点，周四了。"
 ];
-document.body.innerText = list[Math.floor(Math.random() * list.length)];
+// 随机选取一条
+const randomText = list[Math.floor(Math.random() * list.length)]
+document.getElementById("content").innerText = randomText
 </script>
 </body>
 </html>
