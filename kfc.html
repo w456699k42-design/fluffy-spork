@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>疯狂星期四</title>
+<style>
+body{margin:0;padding:30px;font-size:17px;background:#fff;color:#222;}
+</style>
+</head>
+<body>
+<script>
+(async()=>{
+  let d=await(await fetch("https://api.jixs.cc/api/wenan-fkxqs/index.php")).json();
+  document.body.innerText=d.text;
+})();
+</script>
+</body>
+</html>
